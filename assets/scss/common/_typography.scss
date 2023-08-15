@@ -1,0 +1,15 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+
+  font-family: $font-main;
+  font-size: $font-size;
+}

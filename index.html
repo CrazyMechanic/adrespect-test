@@ -7,6 +7,11 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Giard design</title>
   <link href="libs/bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -57,26 +62,25 @@
         <div class="container">
           <div class="slide__item-content">
             <div class="row">
-              <!--              <div class="col-3"></div>-->
-              <div class="col-md-6">
-                <div>
-                  <h1>Nowoczesna<br>
-                    aranżacja<br>
-                    Twojego ogrodu</h1>
+              <!--              <div class="col-md-6">-->
+              <div>
+                <h1>Nowoczesna<br>
+                  aranżacja<br>
+                  Twojego ogrodu</h1>
 
-                  <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
-                    zakres
-                    usług z indywidualnym podejściem do każdego projektu.</p>
-                </div>
-
-                <div>
-                  <button>Skontaktuj się z nami</button>
-
-                  <button>Zobacz nasze realizacje
-                    <img alt="arrow-down" src="assets/img/arrow-down.svg">
-                  </button>
-                </div>
+                <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
+                  zakres
+                  usług z indywidualnym podejściem do każdego projektu.</p>
               </div>
+
+              <div>
+                <button>Skontaktuj się z nami</button>
+
+                <button>Zobacz nasze realizacje
+                  <img alt="arrow-down" src="assets/img/arrow-down.svg">
+                </button>
+              </div>
+              <!--              </div>-->
             </div>
           </div>
         </div>
@@ -102,12 +106,76 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <br>
 
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+
+  <!--  <div style="text-align:center">-->
+  <!--    <span class="dot" onclick="currentSlide(1)"></span>-->
+  <!--    <span class="dot" onclick="currentSlide(2)"></span>-->
+  <!--    <span class="dot" onclick="currentSlide(3)"></span>-->
+  <!--  </div>-->
+  <div class="oferta__container">
+    <div class="container px-0">
+      <div class="oferta__content-container">
+        <p class="oferta__content-nav">Oferta</p>
+        <div class="oferta__content">
+          <h2 class="oferta__content-title">Działamy kompleksowo</h2>
+          <p class="oferta__content-text">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+            nowoczesne ogrody przydomowe oraz
+            rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
+            posłużymy radą i wieloletnim doświadczeniem. </p>
+        </div>
+      </div>
+
+      <div class="oferta__cards">
+        <div class="row">
+          <div class="oferta__item col-4">
+            <div class="oferta__item-container">
+              <img alt="projects" class="oferta__item-img" src="assets/img/projects.svg">
+
+              <h3 class="oferta__item-title">Projekty</h3>
+
+              <p class="oferta__item-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
+                istniejącej
+                przestrzeni.</p>
+
+              <a class="oferta__item-link" href="">Dowiedz się więcej
+                <img alt="arrow-right" src="assets/img/arrow-right.svg">
+              </a>
+            </div>
+          </div>
+
+          <div class="oferta__item col-4">
+            <div class="oferta__item-container">
+              <img alt="visualizations" class="oferta__item-img" src="assets/img/visualizations.svg">
+
+              <h3 class="oferta__item-title">Wizualizacje</h3>
+
+              <p class="oferta__item-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+                animowanego w technologii 3D.</p>
+
+              <a class="oferta__item-link" href="">Dowiedz się więcej
+                <img alt="arrow-right" src="assets/img/arrow-right.svg">
+              </a>
+            </div>
+          </div>
+
+          <div class="oferta__item col-4">
+            <div class="oferta__item-container">
+              <img alt="realizations" class="oferta__item-img" src="assets/img/realizations.svg">
+
+              <h3 class="oferta__item-title">Realizacje</h3>
+
+              <p class="oferta__item-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+                zaawansowanych technologii.</p>
+
+              <a class="oferta__item-link" href="">Zobacz nasze realizacje
+                <img alt="arrow-right" src="assets/img/arrow-right.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 

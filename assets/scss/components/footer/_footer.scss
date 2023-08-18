@@ -3,12 +3,91 @@
 
 .footer {
   background-color: #111111;
+  color: #F5F0EC;
 
   &__container {
     max-width: 1140px;
     padding-inline: 50px;
-    //--------------------------------
-    height: 600px;
-    //--------------------------------
+  }
+}
+
+.contact {
+  &__container {
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &-action {
+      display: flex;
+    }
+
+    // TODO------------------------------------BBBTTTNNN
+    &-btn {
+      /* Button */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 24px 14px;
+      gap: 10px;
+
+      width: 208px;
+      height: 50px;
+
+      /* Green */
+      background: #1B5B31;
+      border-radius: 200px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+
+      /* CTA */
+
+      width: 160px;
+      height: 24px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      /* identical to box height, or 24px */
+      text-align: center;
+
+      /* Grey */
+      color: #F5F0EC;
+
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+    }
+  }
+
+  &__line {
+    border: 1px solid #F5F0EC;
+  }
+
+  &__network {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+  }
+
+  &__copyright {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

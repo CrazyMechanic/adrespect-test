@@ -7,68 +7,37 @@
 
   &__container {
     max-width: 1140px;
-    padding-inline: 50px;
+    padding: 80px 50px;
   }
 }
 
 .contact {
   &__container {
+    margin-bottom: 120px;
+    //  TODO--------FLEX GAP
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &-action {
       display: flex;
+      gap: 24px;
     }
 
-    // TODO------------------------------------BBBTTTNNN
+    &-text {
+      margin: auto;
+      letter-spacing: -0.01em;
+    }
+
     &-btn {
-      /* Button */
-
-      /* Auto layout */
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       padding: 12px 24px 14px;
-      gap: 10px;
-
-      width: 208px;
-      height: 50px;
-
-      /* Green */
       background: #1B5B31;
       border-radius: 200px;
-
-      /* Inside auto layout */
-      flex: none;
-      order: 1;
-      flex-grow: 0;
-
-
-      /* CTA */
-
-      width: 160px;
-      height: 24px;
-
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
       line-height: 150%;
-      /* identical to box height, or 24px */
-      text-align: center;
-
-      /* Grey */
       color: #F5F0EC;
-
-
-      /* Inside auto layout */
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-
     }
   }
 
@@ -79,12 +48,18 @@
   &__network {
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
+    letter-spacing: -0.01em;
   }
 
   &__social {
+    display: flex;
+    gap: 48px;
   }
 
   &__copyright {
+    letter-spacing: -0.01em;
+
     &-container {
       display: flex;
       justify-content: space-between;

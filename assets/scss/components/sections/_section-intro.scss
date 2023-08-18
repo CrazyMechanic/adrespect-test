@@ -28,18 +28,9 @@
     }
 
     &-content {
-      //flex: 1;
-      //padding-right: 15px;
-      //display: flex;
-      //align-items: center;
-
     }
 
     &-img {
-      //height: auto;
-      //width: auto;
-      //max-width: 100%;
-
       max-width: none;
       max-height: none;
 
@@ -96,20 +87,9 @@
 
 
 .intro-fade {
-  //-webkit-animation-name: fade;
-  //-webkit-animation-duration: 1.5s;
   animation-name: intro-fade;
   animation-duration: 1.5s;
 }
-
-//@-webkit-keyframes intro-fade {
-//  from {
-//    opacity: 0
-//  }
-//  to {
-//    opacity: 1
-//  }
-//}
 
 @keyframes intro-fade {
   from {

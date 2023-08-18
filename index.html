@@ -117,8 +117,10 @@
     <div class="container px-0">
       <div class="oferta__content-container">
         <p class="oferta__content-nav">Oferta</p>
+
         <div class="oferta__content">
-          <h2 class="oferta__content-title">Działamy kompleksowo</h2>
+          <h2 class="oferta__content-title">Działamy <i>kompleksowo</i></h2>
+
           <p class="oferta__content-text">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
             nowoczesne ogrody przydomowe oraz
             rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
@@ -130,14 +132,18 @@
         <div class="row">
           <div class="oferta__item col-4">
             <div class="oferta__item-container">
-              <img alt="projects" class="oferta__item-img" src="assets/img/projects.svg">
+              <div class="oferta__item-img">
+                <img alt="projects" src="assets/img/projects.svg">
+              </div>
 
               <h3 class="oferta__item-title">Projekty</h3>
 
               <p class="oferta__item-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
                 istniejącej
                 przestrzeni.</p>
+            </div>
 
+            <div class="oferta__item-link-container">
               <a class="oferta__item-link" href="">Dowiedz się więcej
                 <img alt="arrow-right" src="assets/img/arrow-right.svg">
               </a>
@@ -146,13 +152,18 @@
 
           <div class="oferta__item col-4">
             <div class="oferta__item-container">
-              <img alt="visualizations" class="oferta__item-img" src="assets/img/visualizations.svg">
+              <div class="oferta__item-img">
+                <img alt="visualizations" src="assets/img/visualizations.svg">
+              </div>
 
               <h3 class="oferta__item-title">Wizualizacje</h3>
 
-              <p class="oferta__item-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
-                animowanego w technologii 3D.</p>
+              <p class="oferta__item-text">Przedstawimy Ci projekty koncepcyjne<br>
+                w postaci wirtualnego spaceru animowanego<br>
+                w technologii 3D.</p>
+            </div>
 
+            <div class="oferta__item-link-container">
               <a class="oferta__item-link" href="">Dowiedz się więcej
                 <img alt="arrow-right" src="assets/img/arrow-right.svg">
               </a>
@@ -161,13 +172,17 @@
 
           <div class="oferta__item col-4">
             <div class="oferta__item-container">
-              <img alt="realizations" class="oferta__item-img" src="assets/img/realizations.svg">
+              <div class="oferta__item-img">
+                <img alt="realizations" src="assets/img/realizations.svg">
+              </div>
 
               <h3 class="oferta__item-title">Realizacje</h3>
 
               <p class="oferta__item-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
                 zaawansowanych technologii.</p>
+            </div>
 
+            <div class="oferta__item-link-container">
               <a class="oferta__item-link" href="">Zobacz nasze realizacje
                 <img alt="arrow-right" src="assets/img/arrow-right.svg">
               </a>
@@ -179,7 +194,45 @@
   </div>
 </main>
 
-<footer></footer>
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="contact__container">
+      <div class="contact__info">
+        <div class="contact__info-logo">
+          <img alt="logo" src="assets/img/logo-white.svg">
+        </div>
+
+        <div class="contact__info-action">
+          <p class="contact__info-text">Daj znać, co możemy dla Ciebie zrobić!</p>
+
+          <button class="contact__info-btn">Skontaktuj się z nami</button>
+        </div>
+      </div>
+
+      <div class="contact__line"></div>
+
+      <div class="contact__">
+        <div>
+          <span>Kontakt</span>
+          <span>Instagram</span>
+          <span>Facebook</span>
+          <span>LinkedIn</span>
+        </div>
+        <div>
+          <span>000-000-000</span>
+          <span>giarddesign@kontakt.pl</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span>Prawa zastrzeżone © 2022</span>
+      <span>
+          <img alt="adrespect" src="assets/img/adrespect.svg">
+        </span>
+    </div>
+  </div>
+</footer>
 
 <script src="libs/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 <!--<script src="libs/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>-->

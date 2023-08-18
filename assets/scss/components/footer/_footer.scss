@@ -14,7 +14,8 @@
 .contact {
   &__container {
     margin-bottom: 120px;
-    //  TODO--------FLEX GAP
+    display: grid;
+    gap: 62px;
   }
 
   &__info {
@@ -38,6 +39,11 @@
       border-radius: 200px;
       line-height: 150%;
       color: #F5F0EC;
+
+      &:hover {
+        box-shadow: -3px 3px 30px -7px #F5F0EC;
+        background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
+      }
     }
   }
 
@@ -55,6 +61,10 @@
   &__social {
     display: flex;
     gap: 48px;
+
+    & a {
+      color: #F5F0EC;
+    }
   }
 
   &__copyright {

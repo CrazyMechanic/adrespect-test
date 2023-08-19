@@ -1,0 +1,65 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.instagram {
+  &__container {
+    display: flex;
+    //width: 1440px;
+    padding: 60px 0;
+    justify-content: center;
+    background: #F5F0EC;
+  }
+
+  &__content {
+    display: flex;
+    width: 1040px;
+    padding: 120px 110px;
+    align-items: flex-end;
+    gap: 64px;
+    background: #1B5B31;
+    color: #F5F0EC;
+
+    &-title {
+      margin-bottom: 0;
+      width: 598.996px;
+      font-family: Montserrat, sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 120%; /* 48px */
+      letter-spacing: -2px;
+
+      & i {
+        letter-spacing: normal;
+      }
+    }
+
+    &-container {
+      display: flex;
+      width: 157px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      flex-shrink: 0;
+    }
+
+    &-text {
+      margin-bottom: 0;
+      letter-spacing: -0.16px;
+    }
+
+    &-btn {
+      padding: 10px 24px 12px 24px;
+      border-radius: 200px;
+      background: #F5F0EC;
+      color: #1B5B31;
+      transition: 0.5s;
+
+      &:hover {
+        border-radius: 200px;
+        color: #F5F0EC;
+        box-shadow: -3px 3px 20px -7px darken(#1B5B31, 60%);
+        background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0.5));
+      }
+    }
+  }
+}

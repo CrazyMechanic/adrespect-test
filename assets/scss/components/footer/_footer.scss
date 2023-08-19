@@ -39,6 +39,7 @@
       border-radius: 200px;
       line-height: 150%;
       color: #F5F0EC;
+      transition: 0.5s;
 
       &:hover {
         box-shadow: -3px 3px 30px -7px #F5F0EC;
@@ -64,6 +65,13 @@
 
     & a {
       color: #F5F0EC;
+      transition: 0.5s;
+
+      &:hover {
+        box-shadow: -3px 3px 30px -7px #F5F0EC;
+        background-color: rgba(245, 240, 236, 0.1);
+        border-radius: 10px;
+      }
     }
   }
 

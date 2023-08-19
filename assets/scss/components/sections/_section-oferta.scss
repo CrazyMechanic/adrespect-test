@@ -38,6 +38,10 @@
       font-size: 48px;
       line-height: 115%;
       letter-spacing: -0.03em;
+
+      & i {
+        letter-spacing: normal;
+      }
     }
 
     &-text {
@@ -64,6 +68,7 @@
     background-color: #ffffff;
     border-radius: 28px;
     cursor: pointer;
+    transition: 0.3s;
 
     &:hover {
       background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));

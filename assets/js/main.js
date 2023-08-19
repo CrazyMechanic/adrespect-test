@@ -1,4 +1,14 @@
+let container = document.querySelector('.item-container');
 let slideIndex = 1;
+
+let msnry = new Masonry(container, {
+  // containerStyle: 'relative',
+  horizontalOrder: true,
+  gutter: 43,
+  columnWidth: 204,
+  itemSelector: '.item',
+});
+
 showSlides(slideIndex);
 
 // Next/previous controls

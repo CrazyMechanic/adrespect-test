@@ -50,6 +50,7 @@
 
   &__img {
     &-container {
+      position: relative;
       margin-inline: auto;
       width: 1440px;
       height: 1475px;
@@ -60,4 +61,28 @@
 
 .item {
   margin-bottom: 42px;
+
+  &-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%;
+    pointer-events: none;
+    background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+  }
+
+  &-btn {
+    position: absolute;
+    display: inline-flex;
+    bottom: 45.5px;
+    left: 658px;
+    padding: 12px 22px 14px 22px;
+    gap: 8px;
+    border-radius: 200px;
+    border: 1px solid #111;
+    color: #111;
+
+    // TODO ------------------- HOVER
+  }
 }

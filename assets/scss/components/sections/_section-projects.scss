@@ -1,11 +1,5 @@
 .projects {
   background-color: #DCC1AB;
-  //display: flex;
-  //padding: 120px 0 44px 0;
-  //flex-direction: column;
-  //align-items: flex-start;
-  //gap: 96px;
-
   display: flex;
   padding: 120px 0 44px 0;
   flex-direction: column;
@@ -61,6 +55,12 @@
 
 .item {
   margin-bottom: 42px;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: -3px 3px 20px -5px darken(#1B5B31, 60%);
+  }
 
   &-overlay {
     position: absolute;
@@ -82,7 +82,36 @@
     border-radius: 200px;
     border: 1px solid #111;
     color: #111;
+    transition: 0.5s;
 
-    // TODO ------------------- HOVER
+    &:hover {
+      background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
+      box-shadow: -3px 3px 20px -5px darken(#1B5B31, 60%);
+    }
   }
+}
+
+.carousel {
+  margin-inline: auto;
+
+  &-item {
+    & img {
+      object-fit: contain;
+      max-height: 68vh;
+    }
+  }
+}
+
+.modal-content {
+  height: 90vh;
+}
+
+.carousel-control-prev {
+  border-radius: 5px 0 0 5px;
+  background: linear-gradient(to right, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
+}
+
+.carousel-control-next {
+  border-radius: 0 5px 5px 0;
+  background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
 }

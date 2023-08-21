@@ -63,3 +63,65 @@
     }
   }
 }
+
+@include xl-lg {
+  .instagram {
+    &__content {
+      width: 980px;
+
+      &-title {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@include lg-md {
+  .instagram {
+    &__content {
+      padding: 90px 80px;
+      width: 750px;
+
+      &-container {
+        width: 147px;
+      }
+
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-btn {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include md-sm {
+  .instagram {
+    &__content {
+      padding: 50px 40px;
+      width: 500px;
+
+      &-container {
+        width: 147px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-btn {
+        font-size: 14px;
+      }
+    }
+  }
+}

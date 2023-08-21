@@ -105,3 +105,173 @@
   }
 }
 
+@include ul-xl {
+  .oferta {
+    //&__content {
+    //  &-container {
+    //  }
+    //}
+
+    &__cards {
+      width: 1180px;
+      margin-inline: auto;
+
+      & .row {
+        margin-inline: auto;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@include xl-lg {
+  .oferta {
+    &__container {
+      padding-top: 90px;
+    }
+
+    &__content {
+      &-container {
+        padding-left: 30px;
+        width: 990px;
+      }
+    }
+
+    &__cards {
+      & .row {
+        margin-inline: auto;
+        width: 980px;
+        gap: 40px;
+      }
+    }
+
+    &__item {
+      width: 300px;
+      height: 292px;
+      padding: 28px 24px;
+
+      &-img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@include lg-md {
+  .oferta {
+    &__container {
+      padding-top: 60px;
+    }
+
+    &__content {
+      &-container {
+        margin-left: 10px;
+        margin-bottom: 40px;
+        width: 750px;
+      }
+
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+    }
+
+    &__cards {
+      padding-bottom: 100px;
+
+      & .row {
+        margin-inline: auto;
+        width: 750px;
+        gap: 30px;
+      }
+    }
+
+    &__item {
+      width: 230px;
+      height: 222px;
+      padding: 28px 24px;
+
+      &-img {
+        margin-bottom: 15px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 10px;
+      }
+
+      &-link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include md-sm {
+  .oferta {
+    &__container {
+      padding-top: 40px;
+    }
+
+    &__content {
+      width: 500px;;
+      gap: 20px;
+
+      &-container {
+        margin-left: 10px;
+        margin-bottom: 0;
+        width: 500px;
+      }
+
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        width: 500px;
+        font-size: 10px;
+      }
+    }
+
+    &__cards {
+      padding-bottom: 60px;
+
+      & .row {
+        margin-inline: auto;
+        width: 578px;
+        gap: 30px;
+      }
+    }
+
+    &__item {
+      width: 100%;
+      height: auto;
+      gap: 20px;
+      //height: 222px;
+      padding: 22px 24px;
+
+      &-img {
+        margin-bottom: 15px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 10px;
+      }
+
+      &-link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+

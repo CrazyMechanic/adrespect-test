@@ -1,5 +1,4 @@
 @use "../presets" as *;
-@use "../mixins" as *;
 
 *,
 *::before,
@@ -8,7 +7,6 @@
 }
 
 html {
-  //font-size: $font-size;
   font-size: 16px;
 
   -ms-overflow-style: none;
@@ -18,3 +16,7 @@ html {
     display: none;
   }
 }
+
+//body {
+//  width: 100vw;
+//}

@@ -53,3 +53,40 @@ header {
   display: flex;
   justify-content: center;
 }
+
+@include ul-xl {
+  .logo {
+    margin-left: 15px;
+  }
+
+  #nav-list {
+    margin-right: 15px;
+  }
+}
+
+@include xl-lg {
+  .logo {
+    margin-left: 15px;
+  }
+
+  #nav-list {
+    margin-right: 15px;
+    gap: 20px !important;
+  }
+}
+
+@include lg-md {
+  .logo {
+    margin-left: 10px;
+  }
+
+  #nav-list {
+    margin-right: 10px;
+    gap: 10px !important;
+  }
+}
+
+@include md-sm {
+
+}
+

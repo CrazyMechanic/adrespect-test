@@ -1,7 +1,14 @@
-let slides = document.getElementsByClassName('slide__item');
-let container = document.querySelector('.item-container');
-let carouselInner = document.querySelector('#carousel-inner');
-let imgArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+const itemImages = document.querySelectorAll('.item-img');
+const itemBtnMore = document.querySelector('#more');
+const itemBtnLess = document.querySelector('#less');
+const itemOverlay = document.querySelector('.item-overlay');
+const projectsImgContainer = document.querySelector('.projects__img-container');
+const slides = document.getElementsByClassName('slide__item');
+const container = document.querySelector('.item-container');
+const carouselInner = document.querySelector('#carousel-inner');
+const search = document.querySelector('#search');
+const searchBtn = document.querySelector('#search-btn');
+const imgArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'];
 let startingIndex = 0;
 let slideIndex = 1;
 
@@ -13,7 +20,6 @@ let msnry = new Masonry(container, {
 });
 
 showSlides(slideIndex);
-
 createImg();
 
 function plusSlides(n) {
@@ -55,7 +61,6 @@ function createImg(startIndex) {
   }
 }
 
-const itemImages = document.querySelectorAll('.item-img');
 
 itemImages.forEach((img, index) => {
   img.dataset.bsTarget = '#exampleModal';
@@ -65,4 +70,32 @@ itemImages.forEach((img, index) => {
     startingIndex = index;
     createImg(startingIndex);
   });
+});
+
+itemBtnMore.addEventListener('click', () => {
+  projectsImgContainer.style.height = 'auto';
+  itemOverlay.style.display = 'none';
+  itemBtnMore.style.display = 'none';
+  itemBtnLess.style.display = 'block';
+  itemBtnLess.style.backgroundColor = 'white';
+});
+
+itemBtnLess.addEventListener('click', () => {
+  projectsImgContainer.style.height = '1475px';
+  itemOverlay.style.display = 'block';
+  itemBtnMore.style.display = 'block';
+  itemBtnLess.style.display = 'none';
+
+});
+
+searchBtn.addEventListener('click', () => {
+  if (search.dataset.counter !== '0') {
+    search.className = 'd-none mb-3';
+    search.classList.remove('active');
+    search.dataset.counter = '0';
+  } else {
+    search.className = 'd-flex mb-3';
+    search.classList.add('active');
+    search.dataset.counter = '1';
+  }
 });

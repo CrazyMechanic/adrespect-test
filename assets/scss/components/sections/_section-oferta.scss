@@ -38,6 +38,7 @@
       font-size: 48px;
       line-height: 115%;
       letter-spacing: -0.03em;
+      margin-bottom: 0;
 
       & i {
         letter-spacing: normal;
@@ -47,6 +48,7 @@
     &-text {
       width: 709px;
       letter-spacing: -0.01em;
+      margin-bottom: 0;
     }
   }
 
@@ -90,6 +92,7 @@
     }
 
     &-text {
+      margin-bottom: 0;
       font-size: 14px;
       letter-spacing: -0.01em;
     }

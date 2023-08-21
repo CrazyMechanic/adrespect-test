@@ -5,7 +5,6 @@ const itemOverlay = document.querySelector('.item-overlay');
 const projectsImgContainer = document.querySelector('.projects__img-container');
 const slides = document.getElementsByClassName('slide__item');
 const container = document.querySelector('.item-container');
-// const item = document.querySelector('.item');
 const carouselInner = document.querySelector('#carousel-inner');
 const search = document.querySelector('#search');
 const searchBtn = document.querySelector('#search-btn');
@@ -18,7 +17,6 @@ let msnry = new Masonry(container, {
   horizontalOrder: true,
   gutter: 43,
   columnWidth: '.item',
-  // columnWidth: 204,
   itemSelector: '.item',
 });
 

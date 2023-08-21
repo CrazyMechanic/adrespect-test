@@ -4,50 +4,61 @@
 .slide {
   &__item {
     position: relative;
-    height: 737px;
+
     display: flex;
     align-items: center;
-    background-color: #DCC1AB;
+
+    height: 737px;
+
+    background-color: #dcc1ab;
 
     &-content {
       display: flex;
-      gap: 44px;
       flex-wrap: wrap;
 
+      gap: 44px;
+
       &-container {
-        padding-top: 140px;
-        width: 599px;
         display: flex;
-        gap: 72px;
         flex-wrap: wrap;
+
+        width: 599px;
+        padding-top: 140px;
+
+        gap: 72px;
       }
 
       &-title {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+
+        font-family: "Montserrat", sans-serif;
         font-size: 60px;
         line-height: 70px;
       }
 
       &-text {
-        margin: 0;
         width: 440px;
+        margin: 0;
       }
 
       &-action {
         display: flex;
+
         gap: 32px;
       }
 
       &-btn {
         display: inline-block;
+
         padding: 12px 24px 14px 24px;
-        border-radius: 200px;
+
         transition: 0.5s;
 
+        border-radius: 200px;
+
         &:hover {
-          box-shadow: -3px 3px 30px -7px darken(#1B5B31, 60%);
-          background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
+          background: linear-gradient(to left, rgba(#1b5b31, 0.5), rgba(33, 243, 173, 0));
+          box-shadow: -3px 3px 30px -7px darken(#1b5b31, 60%);
         }
       }
     }
@@ -58,8 +69,9 @@
 
       &-container {
         position: absolute;
-        right: 0;
         top: 0;
+        right: 0;
+
         max-width: 55%;
       }
     }
@@ -67,22 +79,24 @@
 
   &__nav {
     position: absolute;
-    bottom: 0 !important;
     right: 0;
+    bottom: 0 !important;
+
     padding: 24px 32px;
-    background: #F5F0EC !important;
+
+    background: #f5f0ec !important;
   }
 }
 
 .btn {
   &-contact {
-    background-color: #1B5B31;
-    color: #F5F0EC;
+    color: #f5f0ec;
+    background-color: #1b5b31;
   }
 
   &-realization {
-    border: 1px solid #1B5B31;
-    color: #1B5B31;
+    color: #1b5b31;
+    border: 1px solid #1b5b31;
 
     & img {
       margin-left: 8px;
@@ -90,9 +104,11 @@
   }
 }
 
-.prev, .next {
-  cursor: pointer;
+.prev,
+.next {
   display: inline-block;
+
+  cursor: pointer;
   transition: all 0.7s ease;
 }
 
@@ -102,12 +118,14 @@
 
 .prev {
   right: 60px !important;
+
   margin-right: 32px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.04);
-  box-shadow: -3px 3px 20px -10px darken(#1B5B31, 60%);
+  box-shadow: -3px 3px 20px -10px darken(#1b5b31, 60%);
   //background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -118,10 +136,10 @@
 
 @keyframes intro-fade {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -150,9 +168,9 @@
 
       &-content {
         &-container {
+          width: 400px;
           margin-left: 10px;
           padding-top: 80px;
-          width: 400px;
         }
 
         &-title {
@@ -170,6 +188,7 @@
 
         &-btn {
           padding: 10px 20px 12px 20px;
+
           font-size: 12px;
         }
       }
@@ -189,9 +208,9 @@
 
       &-content {
         &-container {
+          width: 350px;
           margin-left: 10px;
           padding-top: 30px;
-          width: 350px;
         }
 
         &-title {
@@ -201,20 +220,25 @@
 
         &-text {
           width: 350px;
+
           font-size: 14px;
         }
 
         &-action {
-          padding-right: 10px;
           flex-wrap: wrap;
+
+          padding-right: 10px;
+
           gap: 15px;
         }
 
         &-btn {
           width: 100%;
           padding: 10px 20px 12px 20px;
-          font-size: 12px;
+
           text-align: center;
+
+          font-size: 12px;
         }
       }
 
@@ -234,11 +258,11 @@
       height: 420px;
 
       &-content {
-
         &-container {
+          width: 350px;
           margin-left: 10px;
           padding-top: 70px;
-          width: 350px;
+
           gap: 90px;
         }
 
@@ -249,20 +273,25 @@
 
         &-text {
           width: 250px;
+
           font-size: 12px;
         }
 
         &-action {
-          padding-right: 10px;
           flex-wrap: wrap;
+
+          padding-right: 10px;
+
           gap: 15px;
         }
 
         &-btn {
           width: 100%;
           padding: 5px 20px 5px 20px;
-          font-size: 10px;
+
           text-align: center;
+
+          font-size: 10px;
         }
       }
 
@@ -276,3 +305,55 @@
   }
 }
 
+@include sm {
+  .slide {
+    &__item {
+      height: 420px;
+
+      &-content {
+        &-container {
+          width: 180px;
+          margin-left: 10px;
+          padding-top: 30px;
+
+          gap: 36px;
+        }
+
+        &-title {
+          font-size: 16px;
+          line-height: normal;
+        }
+
+        &-text {
+          width: 140px;
+
+          font-size: 12px;
+        }
+
+        &-action {
+          flex-wrap: wrap;
+
+          padding-right: 10px;
+
+          gap: 15px;
+        }
+
+        &-btn {
+          width: 90%;
+          padding: 5px 20px 5px 20px;
+
+          text-align: center;
+
+          font-size: 10px;
+        }
+      }
+
+      &-img {
+        height: 325px;
+      }
+    }
+
+    &__nav {
+    }
+  }
+}

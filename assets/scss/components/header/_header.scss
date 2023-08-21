@@ -14,9 +14,9 @@ header {
     transition: 0.5s;
 
     &:hover {
-      box-shadow: -3px 3px 30px -4px rgba(23, 21, 21, 0.9);
-      background-color: rgba(0, 0, 0, 0.11);
       border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.11);
+      box-shadow: -3px 3px 30px -4px rgba(23, 21, 21, 0.9);
     }
   }
 
@@ -25,27 +25,32 @@ header {
     transition: 0.5s;
 
     &:hover {
-      box-shadow: -3px 3px 30px -7px rgba(23, 21, 21, 0.78);
-      background-color: rgba(245, 240, 236, 0.95);
       border-radius: 10px;
+      background-color: rgba(245, 240, 236, 0.95);
+      box-shadow: -3px 3px 30px -7px rgba(23, 21, 21, 0.78);
     }
   }
 }
 
 #search {
-  transition: width 1s ease-in-out, opacity 1s ease-in-out;
-  width: 70vw;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.95);
   z-index: 1000;
-  border-radius: 5px;
-  opacity: 0;
+
+  width: 70vw;
+
+  transition: width 1s ease-in-out, opacity 1s ease-in-out;
   pointer-events: none;
+
+  opacity: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
 
   &.active {
     width: 70vw;
-    opacity: 1;
+
     pointer-events: auto;
+
+    opacity: 1;
   }
 }
 
@@ -71,6 +76,7 @@ header {
 
   #nav-list {
     margin-right: 15px;
+
     gap: 20px !important;
   }
 }
@@ -82,11 +88,46 @@ header {
 
   #nav-list {
     margin-right: 10px;
+
     gap: 10px !important;
   }
 }
 
 @include md-sm {
+  .logo {
+    margin-left: 10px;
+  }
 
+  .nav-link {
+    width: 70px;
+  }
+
+  #nav-list {
+    width: 200px;
+    margin-right: 5px;
+
+    gap: 10px !important;
+  }
 }
 
+@include sm {
+  .logo {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    width: 50px;
+
+    font-size: 8px;
+  }
+
+  #nav-list {
+    position: absolute;
+    left: 167px;
+
+    width: 200px;
+
+    gap: 0 !important;
+  }
+}

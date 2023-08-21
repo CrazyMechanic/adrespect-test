@@ -2,58 +2,71 @@
 @use "../../mixins" as *;
 
 .projects {
-  background-color: #DCC1AB;
   display: flex;
-  padding: 120px 0 44px 0;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+
+  padding: 120px 0 44px 0;
+
+  background-color: #dcc1ab;
+
   gap: 96px;
 
   &__title {
     margin-bottom: 0;
+
+    letter-spacing: -1.44px;
+
     font-family: Montserrat, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 500;
+    font-style: normal;
     line-height: 115%; /* 55.2px */
-    letter-spacing: -1.44px;
 
     & i {
       letter-spacing: normal;
     }
 
     &-container {
-      margin-inline: auto;
       //width: 1440px;
       display: flex;
-      padding-left: 100px;
+      align-items: flex-start;
+      align-self: stretch;
       //padding-left: 160px;
       flex-direction: column;
-      align-items: flex-start;
+
+      padding-left: 100px;
+
       gap: 16px;
-      align-self: stretch;
+      margin-inline: auto;
     }
 
     &-nav {
       margin-bottom: 0;
-      color: #1B5B31;
+
+      letter-spacing: -0.12px;
+
+      color: #1b5b31;
+
       font-family: Inter, sans-serif;
       font-size: 12px;
-      font-style: normal;
       font-weight: 400;
+      font-style: normal;
       line-height: 150%; /* 18px */
-      letter-spacing: -0.12px;
     }
   }
 
   &__img {
     &-container {
       position: relative;
-      margin-inline: auto;
+
+      overflow: hidden;
       //width: 1200px;
+
       width: 1440px;
       height: 1475px;
-      overflow: hidden;
+
+      margin-inline: auto;
     }
   }
 }
@@ -61,38 +74,48 @@
 .item {
   width: 31.29%;
   margin-bottom: 42px;
+
   transition: 0.3s;
 
   &:hover {
     cursor: pointer;
-    box-shadow: -3px 3px 20px -5px darken(#1B5B31, 60%);
+
+    box-shadow: -3px 3px 20px -5px darken(#1b5b31, 60%);
   }
 
   &-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 1000px;
+
     width: 100%;
+    height: 1000px;
+
     pointer-events: none;
-    background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+
+    background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0.00) 100%);
   }
 
   &-btn {
     position: absolute;
-    display: inline-flex;
     bottom: 45.5px;
     left: 658px;
+
+    display: inline-flex;
+
     padding: 12px 22px 14px 22px;
-    gap: 8px;
-    border-radius: 200px;
-    border: 1px solid #111;
-    color: #111;
+
     transition: 0.5s;
 
+    color: #111111;
+    border: 1px solid #111111;
+    border-radius: 200px;
+
+    gap: 8px;
+
     &:hover {
-      background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
-      box-shadow: -3px 3px 20px -5px darken(#1B5B31, 60%);
+      background: linear-gradient(to left, rgba(#1b5b31, 0.5), rgba(33, 243, 173, 0));
+      box-shadow: -3px 3px 20px -5px darken(#1b5b31, 60%);
     }
   }
 }
@@ -102,8 +125,9 @@
 
   &-item {
     & img {
-      object-fit: contain;
       max-height: 68vh;
+
+      object-fit: contain;
     }
   }
 }
@@ -114,18 +138,58 @@
 
 .carousel-control-prev {
   border-radius: 5px 0 0 5px;
-  background: linear-gradient(to right, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
+  background: linear-gradient(to right, rgba(#1b5b31, 0.5), rgba(33, 243, 173, 0));
 }
 
 .carousel-control-next {
   border-radius: 0 5px 5px 0;
-  background: linear-gradient(to left, rgba(#1B5B31, 0.5), rgba(33, 243, 173, 0));
+  background: linear-gradient(to left, rgba(#1b5b31, 0.5), rgba(33, 243, 173, 0));
+}
+
+@include ul-xl {
+  .projects {
+    &__img {
+      &-container {
+        width: 1199px;
+      }
+    }
+  }
+
+  .item {
+    width: 370px;
+
+    & img {
+      width: 370px;
+    }
+
+    &-btn {
+      left: 543px;
+    }
+  }
 }
 
 @include xl-lg {
   .projects {
     &__title {
       font-size: 36px;
+    }
+
+    &__img {
+      &-container {
+        width: 990px;
+      }
+    }
+  }
+
+  .item {
+    width: 301px;
+
+    & img {
+      width: 301px;
+    }
+
+    &-btn {
+      left: 440px;
     }
   }
 }
@@ -134,6 +198,24 @@
   .projects {
     &__title {
       font-size: 30px;
+    }
+
+    &__img {
+      &-container {
+        width: 767px;
+      }
+    }
+  }
+
+  .item {
+    width: 360px;
+
+    & img {
+      width: 360px;
+    }
+
+    &-btn {
+      left: 320px;
     }
   }
 }
@@ -149,8 +231,57 @@
         padding-left: 50px;
       }
     }
+
+    &__img {
+      &-container {
+        width: 575px;
+      }
+    }
+  }
+
+  .item {
+    width: 570px;
+
+    & img {
+      width: 570px;
+    }
+
+    &-btn {
+      left: 230px;
+    }
   }
 }
 
+@include sm {
+  .projects {
+    padding-top: 40px;
 
+    &__title {
+      font-size: 18px;
+
+      &-container {
+        padding-left: 50px;
+      }
+    }
+
+    &__img {
+      &-container {
+        width: 370px;
+        //width: 422px;
+      }
+    }
+
+    .item {
+      width: 370px;
+
+      & img {
+        width: 370px;
+      }
+
+      &-btn {
+        left: 120px;
+      }
+    }
+  }
+}
 

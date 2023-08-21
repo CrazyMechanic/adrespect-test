@@ -1,2 +1,133 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+header {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1262px;
+}
+
+.nav {
+  &-search {
+    transition: 0.5s;
+
+    &:hover {
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.11);
+      box-shadow: -3px 3px 30px -4px rgba(23, 21, 21, 0.9);
+    }
+  }
+
+
+  &-link {
+    transition: 0.5s;
+
+    &:hover {
+      border-radius: 10px;
+      background-color: rgba(245, 240, 236, 0.95);
+      box-shadow: -3px 3px 30px -7px rgba(23, 21, 21, 0.78);
+    }
+  }
+}
+
+#search {
+  position: absolute;
+  z-index: 1000;
+
+  width: 70vw;
+
+  transition: width 1s ease-in-out, opacity 1s ease-in-out;
+  pointer-events: none;
+
+  opacity: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+
+  &.active {
+    width: 70vw;
+
+    pointer-events: auto;
+
+    opacity: 1;
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+@include ul-xl {
+  .logo {
+    margin-left: 15px;
+  }
+
+  #nav-list {
+    margin-right: 15px;
+  }
+}
+
+@include xl-lg {
+  .logo {
+    margin-left: 15px;
+  }
+
+  #nav-list {
+    margin-right: 15px;
+
+    gap: 20px !important;
+  }
+}
+
+@include lg-md {
+  .logo {
+    margin-left: 10px;
+  }
+
+  #nav-list {
+    margin-right: 10px;
+
+    gap: 10px !important;
+  }
+}
+
+@include md-sm {
+  .logo {
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    width: 70px;
+  }
+
+  #nav-list {
+    width: 200px;
+    margin-right: 5px;
+
+    gap: 10px !important;
+  }
+}
+
+@include sm {
+  .logo {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    width: 50px;
+
+    font-size: 8px;
+  }
+
+  #nav-list {
+    position: absolute;
+    left: 167px;
+
+    width: 200px;
+
+    gap: 0 !important;
+  }
+}

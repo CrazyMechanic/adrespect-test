@@ -1,0 +1,169 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.instagram {
+  &__container {
+    display: flex;
+    justify-content: center;
+    //width: 1440px;
+
+    padding: 60px 0;
+
+    background: #f5f0ec;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+
+    width: 1040px;
+    padding: 120px 110px;
+
+    color: #f5f0ec;
+    background: #1b5b31;
+
+    gap: 64px;
+
+    &-title {
+      width: 598.996px;
+      margin-bottom: 0;
+
+      letter-spacing: -2px;
+
+      font-family: Montserrat, sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 120%; /* 48px */
+
+      & i {
+        letter-spacing: normal;
+      }
+    }
+
+    &-container {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-shrink: 0;
+
+      width: 157px;
+
+      gap: 24px;
+    }
+
+    &-text {
+      margin-bottom: 0;
+
+      letter-spacing: -0.16px;
+    }
+
+    &-btn {
+      padding: 10px 24px 12px 24px;
+
+      transition: 0.5s;
+
+      color: #1b5b31;
+      border-radius: 200px;
+      background: #f5f0ec;
+
+      &:hover {
+        color: #f5f0ec;
+        border-radius: 200px;
+        background: linear-gradient(to left, rgba(#1b5b31, 0.5), rgba(33, 243, 173, 0.5));
+        box-shadow: -3px 3px 20px -7px darken(#1b5b31, 60%);
+      }
+    }
+  }
+}
+
+@include xl-lg {
+  .instagram {
+    &__content {
+      width: 980px;
+
+      &-title {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@include lg-md {
+  .instagram {
+    &__content {
+      width: 750px;
+      padding: 90px 80px;
+
+      &-container {
+        width: 147px;
+      }
+
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-btn {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include md-sm {
+  .instagram {
+    &__content {
+      width: 500px;
+      padding: 50px 40px;
+
+      &-container {
+        width: 147px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-btn {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include sm {
+  .instagram {
+    &__container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__content {
+      width: 350px;
+      padding: 40px 30px;
+
+      &-container {
+        width: 110px;
+      }
+
+      &-title {
+        font-size: 16px;
+      }
+
+      &-text {
+        font-size: 9px;
+      }
+
+      &-btn {
+        font-size: 10px;
+      }
+    }
+  }
+}
